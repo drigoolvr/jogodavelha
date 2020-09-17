@@ -6,10 +6,61 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>    
     <link rel = "stylesheet" type = "text/css" href = "assets/css/bootstrap.min.css"/>
     <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header class = "w-100">
+        <div class = "bg-dark" >
+            <div class = "row justify-content-between" style = "height: 80px">
+                <div class = "col-6 d-flex justify-content-start align-items-center" >
+                    <p class = "header-left text-light mx-5">Jogo da Velha</p>
+                </div>
+                <div class = "col-6 d-flex justify-content-end align-items-center">
+                    <p class = "header-right text-light mx-5">Desenvolvido por Rodrigo Oliveira da Silva</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class = "row justify-content-center mt-4">
+            <div class = "col-xs-12 col-sm-12 col-md-3 bg-light border border-2 border-dark mx-1 ">
+                <p>É a vez de:</p>
+                <p class = "jogador">O</p>
+            </div>
+
+            <div class = "col-xs-12 col-sm-12 col-md-4 mx-1">
+                <div class = "jogo bg-dark border border-2 border-primary">
+                    <div class = "row justify-content-center">
+                        <div class = "quadrado1"></div>
+                        <div class = "quadrado2"></div>
+                        <div class = "quadrado3"></div>
+                    </div>
+
+                    <div class = "row justify-content-center">
+                        <div class = "quadrado4"></div>
+                        <div class = "quadrado5"></div>
+                        <div class = "quadrado6"></div>
+                    </div>
+
+                    <div class = "row justify-content-center">
+                        <div class = "quadrado7"></div>
+                        <div class = "quadrado8"></div>
+                        <div class = "quadrado9"></div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class = "col-xs-12 col-sm-12 col-md-3 bg-light border border-2 border-dark mx-1">
+                Placar
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class = "bg-dark text-light text-center" style = "height: 80px">Footer</div>
+    </footer>
     
 
     <script type = "text/javascript" src = "assets/js/jquery-3.5.1.min.js"></script>

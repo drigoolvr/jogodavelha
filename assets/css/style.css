@@ -1,5 +1,63 @@
 * {
     box-sizing: border-box;
-    margin:0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', Arial, Helvetica, Sans-serif;
 }
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+header p {
+    margin: 0px;
+}
+
+.header-left,
+.header-right {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+
+.quadrado1,
+.quadrado2,
+.quadrado3,
+.quadrado4,
+.quadrado5,
+.quadrado6,
+.quadrado7,
+.quadrado8,
+.quadrado9 {
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.quadrado1:hover,
+.quadrado2:hover,
+.quadrado3:hover,
+.quadrado4:hover,
+.quadrado5:hover,
+.quadrado6:hover,
+.quadrado7:hover,
+.quadrado8:hover,
+.quadrado9:hover  {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.jogador {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
+
