@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class = "w-100">
+    <header>
         <div class = "bg-dark" >
             <div class = "row justify-content-between" style = "height: 80px">
                 <div class = "col-6 d-flex justify-content-start align-items-center" >
@@ -23,43 +23,55 @@
         </div>
     </header>
 
-    <main>
+    <main class = "d-flex justify-content-center flex-column">
         <div class = "row justify-content-center mt-4">
             <div class = "col-xs-12 col-sm-12 col-md-3 bg-light border border-2 border-dark mx-1 ">
-                <p>É a vez de:</p>
-                <p class = "jogador">O</p>
+                <div class = "gamestatus d-flex flex-column align-items-center">
+                    <p class = "vez mt-2"><strong>É a vez de:</strong></p>
+                    <p class = "player mt-5">O</p>
+                </div>
+                
             </div>
 
             <div class = "col-xs-12 col-sm-12 col-md-4 mx-1">
                 <div class = "jogo bg-dark border border-2 border-primary">
                     <div class = "row justify-content-center">
-                        <div class = "quadrado1"></div>
-                        <div class = "quadrado2"></div>
-                        <div class = "quadrado3"></div>
+                        <button class = "quadrado1"></button>
+                        <button class = "quadrado2"></button>
+                        <button class = "quadrado3"></button>
                     </div>
 
                     <div class = "row justify-content-center">
-                        <div class = "quadrado4"></div>
-                        <div class = "quadrado5"></div>
-                        <div class = "quadrado6"></div>
+                        <button class = "quadrado4"></button>
+                        <button class = "quadrado5"></button>
+                        <button class = "quadrado6"></button>
                     </div>
 
                     <div class = "row justify-content-center">
-                        <div class = "quadrado7"></div>
-                        <div class = "quadrado8"></div>
-                        <div class = "quadrado9"></div>
+                        <button class = "quadrado7"></button>
+                        <button class = "quadrado8"></button>
+                        <button class = "quadrado9"></button>
                     </div>                    
                 </div>
             </div>
 
             <div class = "col-xs-12 col-sm-12 col-md-3 bg-light border border-2 border-dark mx-1">
-                Placar
+                <div class = "placar d-flex flex-column justify-content-center  align-items-center">
+                    <p class = "text-dark"><strong>Placar</strong></p>
+                    <p>O = <span class = "score-o text-success">0</span></p>
+                    <p>X = <span class = "score-x text-success">0</span></p>
+                </div>
             </div>
         </div>
+        <br/><br/>
+        <button class = "btn btn-primary m-auto botao-replay">JOGAR NOVAMENTE</button>
     </main>
 
     <footer>
-        <div class = "bg-dark text-light text-center" style = "height: 80px">Footer</div>
+        <div class = "d-flex flex-column justify-content-center align-items-center bg-dark" style = "height: 80px">
+            <p class = "text-primary mt-2">Rodrigo Oliveira da Silva @2020</p>
+            <p class = "text-primary">Github: drigoolvr</p>
+        </div>
     </footer>
     
 

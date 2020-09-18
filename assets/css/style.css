@@ -51,13 +51,22 @@ header p {
 .quadrado7:hover,
 .quadrado8:hover,
 .quadrado9:hover  {
-    background-color: yellow;
+    background-color: #EEE;
     cursor: pointer;
 }
 
-.jogador {
+.player {
     color: black;
     font-weight: bold;
     font-size: 50px;
+}
+
+.placar p {
+    font-size: 30px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
