@@ -153,15 +153,9 @@ function victory(quad1, quad2, quad3) {
     document.querySelector('.player').style.color = "Red";
     document.querySelector('.player').innerHTML = quad1.innerHTML + " Venceu!";
 
-    document.querySelector('.quadrado1').disabled = true;
-    document.querySelector('.quadrado2').disabled = true;
-    document.querySelector('.quadrado3').disabled = true;
-    document.querySelector('.quadrado4').disabled = true;
-    document.querySelector('.quadrado5').disabled = true;
-    document.querySelector('.quadrado6').disabled = true;
-    document.querySelector('.quadrado7').disabled = true;
-    document.querySelector('.quadrado8').disabled = true;
-    document.querySelector('.quadrado9').disabled = true;
+    for(let i = 1; i <= 9; i++) {
+        document.querySelector(".quadrado" + i).disabled = true;
+    }
 
     if(quad1.innerHTML == "O"){
         score = parseInt(document.querySelector('.score-o').innerHTML);
@@ -178,45 +172,12 @@ function victory(quad1, quad2, quad3) {
 //Replay Game
 document.querySelector('.botao-replay').addEventListener("click", function(){
 
-    document.querySelector('.quadrado1').disabled = false;
-    document.querySelector('.quadrado2').disabled = false;
-    document.querySelector('.quadrado3').disabled = false;
-    document.querySelector('.quadrado4').disabled = false;
-    document.querySelector('.quadrado5').disabled = false;
-    document.querySelector('.quadrado6').disabled = false;
-    document.querySelector('.quadrado7').disabled = false;
-    document.querySelector('.quadrado8').disabled = false;
-    document.querySelector('.quadrado9').disabled = false;
-
-    document.querySelector('.quadrado1').style.color = "black";
-    document.querySelector('.quadrado2').style.color = "black";
-    document.querySelector('.quadrado3').style.color = "black";
-    document.querySelector('.quadrado4').style.color = "black";
-    document.querySelector('.quadrado5').style.color = "black";
-    document.querySelector('.quadrado6').style.color = "black";
-    document.querySelector('.quadrado7').style.color = "black";
-    document.querySelector('.quadrado8').style.color = "black";
-    document.querySelector('.quadrado9').style.color = "black";
-
-    document.querySelector('.quadrado1').style.backgroundColor = "white";
-    document.querySelector('.quadrado2').style.backgroundColor = "white";
-    document.querySelector('.quadrado3').style.backgroundColor = "white";
-    document.querySelector('.quadrado4').style.backgroundColor = "white";
-    document.querySelector('.quadrado5').style.backgroundColor = "white";
-    document.querySelector('.quadrado6').style.backgroundColor = "white";
-    document.querySelector('.quadrado7').style.backgroundColor = "white";
-    document.querySelector('.quadrado8').style.backgroundColor = "white";
-    document.querySelector('.quadrado9').style.backgroundColor = "white";
-
-    document.querySelector('.quadrado1').innerHTML = "";
-    document.querySelector('.quadrado2').innerHTML = "";
-    document.querySelector('.quadrado3').innerHTML = "";
-    document.querySelector('.quadrado4').innerHTML = "";
-    document.querySelector('.quadrado5').innerHTML = "";
-    document.querySelector('.quadrado6').innerHTML = "";
-    document.querySelector('.quadrado7').innerHTML = "";
-    document.querySelector('.quadrado8').innerHTML = "";
-    document.querySelector('.quadrado9').innerHTML = "";
+    for(let i = 1; i <= 9; i++) {
+        document.querySelector(".quadrado" + i).disabled = false;
+        document.querySelector(".quadrado" + i).style.color = "black";
+        document.querySelector(".quadrado" + i).style.backgroundColor = "white";
+        document.querySelector(".quadrado" + i).innerHTML = "";
+    }    
 
     document.querySelector('.vez').style.visibility = "visible";
     document.querySelector('.player').style.color = "black";
